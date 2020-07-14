@@ -78,6 +78,10 @@ public class RoutesCVSDAO implements RoutesDAO {
 		FileWriter fw = new FileWriter(this.datasetFileName, true);
 		BufferedWriter bw = new BufferedWriter(fw);
 
+		if(routes.size() > 0) {
+			bw.write("\n");
+		}
+		
 		for (Route route : routes) {
 			data.add(route);
 
