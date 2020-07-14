@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "4c70c4f4-7e1b-4bdf-9a42-e395ac36da65",
+		"name": "TravelRoute",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TravelRoute - Best Route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Route",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\"origin\":\"ABC\", \"destination\":\"SED\", \"cost\":\"12\"},\n    {\"origin\":\"BRC\", \"destination\":\"ABC\", \"cost\":\"8\"},\n    {\"origin\":\"SED\", \"destination\":\"ORL\", \"cost\":\"3\"}\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bestroute/addroutes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bestroute",
+						"addroutes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
